@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.ubi.di.pmd.projeto_v1_user">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projeto_v1_user">
+        <activity android:name=".Mostrar_Perfil"
+            android:parentActivityName=".MainActivity1"
+            android:label="Perfil"
+      />
+        <activity
+            android:name=".FotoPerfil"
+            android:label="Escolhe uma foto de Perfil" />
+        <activity
+            android:name=".Mostrar_Eventos_Fechados"
+            android:label="Eventos Fechados"
+            android:parentActivityName=".MainActivity1" />
+        <activity
+            android:name=".Inscrever_Eventos"
+            android:label="Eventos para Inscrição"
+            android:parentActivityName=".Mostrar_Eventos_Disponiveis" />
+        <activity
+            android:name=".Mostrar_Eventos_Disponiveis"
+            android:label="Eventos Disponiveis"
+            android:parentActivityName=".MainActivity1" />
+        <activity
+            android:name=".Mostrar_Equipas"
+            android:label="Eventos Fechados"
+            android:parentActivityName=".Mostrar_Eventos_Fechados" />
+        <activity
+            android:name=".Eventos_Inscrito_Remover_Inscricao"
+            android:label="Remover Inscrição"
+            android:parentActivityName=".Mostrar_Eventos_Inscrito" />
+        <activity
+            android:name=".MainActivity1"
+            android:label="Main Menu" />
+        <activity
+            android:name=".Mostrar_Eventos_Inscrito"
+            android:label="Eventos Inscrito"
+            android:parentActivityName=".MainActivity1" />
+        <activity
+            android:name=".MainActivity_user_registo"
+            android:label="Sign Up"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Sign In">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
